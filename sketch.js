@@ -18,12 +18,12 @@ var isCompatible = blockedURL.indexOf("https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv
 var endOfVideoCode = blockedURL.indexOf("%", isCompatible+49)
 
 if ( isCompatible === -1 ){
-alert("That URL is incompatible. Refresh the page and try again.")
+alert("That URL is incompatible. Try again with a different URL.")
   END()
 }
 
 let text = blockedURL;
 let result = text.substring(isCompatible+45, endOfVideoCode-1);
 
-alert("The unblocked url is https://www.youtube-nocookie.com/embed/"+result)
+alert("The unblocked URL is https://www.youtube-nocookie.com/embed/"+result)
 }
